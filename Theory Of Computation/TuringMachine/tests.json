@@ -1,0 +1,20 @@
+{
+    "states" : 4,
+    "alphabet" : "ab",
+    "tape_symbols" : "ab",
+    "initial_state" : 0,
+    "final_states" : [4],
+    "blank_symbol" : "_",
+    "transitions" : [
+        {"current_state": 0, "next_state": 1, "current_symbol": "a", "write_symbol": "A", "move_direction":"R"},
+        {"current_state": 1, "next_state": 1, "current_symbol": "a", "write_symbol": "a", "move_direction":"R"},
+        {"current_state": 1, "next_state": 1, "current_symbol": "B", "write_symbol": "B", "move_direction":"R"},
+        {"current_state": 1, "next_state": 2, "current_symbol": "b", "write_symbol": "B", "move_direction":"L"},
+        {"current_state": 2, "next_state": 2, "current_symbol": "B", "write_symbol": "B", "move_direction":"L"},
+        {"current_state": 2, "next_state": 2, "current_symbol": "a", "write_symbol": "a", "move_direction":"L"},
+        {"current_state": 2, "next_state": 0, "current_symbol": "A", "write_symbol": "A", "move_direction":"R"},
+        {"current_state": 0, "next_state": 3, "current_symbol": "B", "write_symbol": "B", "move_direction":"R"},
+        {"current_state": 3, "next_state": 3, "current_symbol": "B", "write_symbol": "B", "move_direction":"R"},
+        {"current_state": 3, "next_state": 4, "current_symbol": "_", "write_symbol": "_", "move_direction":"L"}      
+    ]
+}
